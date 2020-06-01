@@ -1,8 +1,9 @@
 {
-  "name": "react-sortablejs",
+  "name": "@narutone/react-sortablejs",
   "author": {
     "name": "Wayne Van Son",
-    "email": "waynevanson@gmail.com"
+    "email": "waynevanson@gmail.com",
+    "fork": "NARUTOne"
   },
   "license": "MIT",
   "version": "1.0.0",

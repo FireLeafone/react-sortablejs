@@ -377,13 +377,17 @@ var ReactSortable = /** @class */ (function (_super) {
     ReactSortable.prototype.onChoose = function (evt) {
         var _a = this.props, list = _a.list, setList = _a.setList;
         var newList = __spread(list);
-        newList[evt.oldIndex].chosen = true;
+        if (newList[evt.oldIndex]) {
+            newList[evt.oldIndex].chosen = true;
+        }
         setList(newList, this.sortable, store);
     };
     ReactSortable.prototype.onUnchoose = function (evt) {
         var _a = this.props, list = _a.list, setList = _a.setList;
         var newList = __spread(list);
-        newList[evt.oldIndex].chosen = false;
+        if (newList[evt.oldIndex]) {
+            newList[evt.oldIndex].chosen = false;
+        }
         setList(newList, this.sortable, store);
     };
     ReactSortable.prototype.onSpill = function (evt) {
