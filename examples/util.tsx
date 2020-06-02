@@ -15,6 +15,11 @@ export const threes = (): ItemInterface[] => [
   { id: id++, name: "Lord Faarquad", ...defs }
 ];
 
+export const threes2 = (): ItemInterface[] => [
+  { id: id++, name: "shrek", ...defs },
+  { id: id++, name: "fiona", ...defs },
+];
+
 export const Item = styled.div`
   display: flex;
   padding: 0.3rem;
